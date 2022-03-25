@@ -1,0 +1,8 @@
+Steps
+
+1. Typescript and javascript have datatypes in common
+    number: 1, 5.3, -10 -> The is no differentiation betwwen integers and floats 
+    string: 'Hi', "Hi", `Hi`
+    boolean: true or false
+2. Run tsc app.ts and oberserve the error.
+3. 
