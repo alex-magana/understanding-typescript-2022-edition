@@ -1,0 +1,14 @@
+Steps
+
+1. Remove the introduction file using-ts.ts
+    rm -rf using-ts.ts
+2. Install dependencies.
+    npm install
+    - This install lite-server which provides a development server
+    with out-of-the-box hot reloading.
+    - To access the dev server, run the following
+        npm start
+3. To compile the typescript code, run the following.
+    tsc app.ts
+    - The tsc tool creates an app.js file that is vanilla javascript
+    which the browser can understand and utilize.
