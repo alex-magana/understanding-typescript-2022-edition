@@ -1,0 +1,36 @@
+Steps
+
+1. Install typescript
+    npm install -g typescript
+    - This command install the compiler that then compiles a .ts file
+    to javascript.
+    compile hello_world.ts
+2. Create a using-ts.ts file and copy contents of js-only.js to it.
+    touch using-ts.ts
+3. Delete js-only.js to resolve the errors reported for ln1 - ln3 in using-ts.ts
+4. Remove type checking code in using-ts.ts ln13 - ln23 and uncomment function, add.
+5. Add typecasting example
+    e.g document.getElementById("num1")! as HTMLInputElement
+6. Add argument types in function, add.
+    - When you hover over ln13 i.e function add(num1, num2)...
+    arguments, you observe the arguments are described as
+    (parameter) num1:any.
+    - This indicaates typescript is not aware of the datatype.
+    - To address this, add the dataype as shown below.
+    function add(num1: number, num2: number)...
+7. With the argument data type set, input1.value, results in an error.
+    - To view the error message, run
+    tsc using-ts.ts
+    - The command above compile the typescript code and results in the error below.
+    Argument of type 'string' is not assignable to parameter of type 'number'
+8. Change the invokation of function, add, as follows
+    (add(+input1.value, +input2.value))
+   to resolve the type mismatch error in step (7).
+9. Delete the file using-ts.js generated in step (7).
+    rm -f using-ts.js
+    - When compiled, using-ts.ts, creates a vanilla javascript file
+    with the aid of the features defined in steps (1) to (8) to ensure
+    the production of less error-prone code.
+10. Change index.html change
+    <script src="js-only.js" defer></script> to <script src="using-ts.js" defer></script> 
+    since the browser can't run using-ts.ts as it doesn't understandd typescript.
