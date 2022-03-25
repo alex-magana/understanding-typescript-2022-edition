@@ -28,3 +28,9 @@ Steps
    to resolve the type mismatch error in step (7).
 9. Delete the file using-ts.js generated in step (7).
     rm -f using-ts.js
+    - When compiled, using-ts.ts, creates a vanilla javascript file
+    with the aid of the features defined in steps (1) to (8) to ensure
+    the production of less error-prone code.
+10. Change index.html change
+    <script src="js-only.js" defer></script> to <script src="using-ts.js" defer></script> 
+    since the browser can't run using-ts.ts as it doesn't understandd typescript.
