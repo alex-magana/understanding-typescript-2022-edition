@@ -18,3 +18,13 @@ Steps
     - This indicaates typescript is not aware of the datatype.
     - To address this, add the dataype as shown below.
     function add(num1: number, num2: number)...
+7. With the argument data type set, input1.value, results in an error.
+    - To view the error message, run
+    tsc using-ts.ts
+    - The command above compile the typescript code and results in the error below.
+    Argument of type 'string' is not assignable to parameter of type 'number'
+8. Change the invokation of function, add, as follows
+    (add(+input1.value, +input2.value))
+   to resolve the type mismatch error in step (7).
+9. Delete the file using-ts.js generated in step (7).
+    rm -f using-ts.js
