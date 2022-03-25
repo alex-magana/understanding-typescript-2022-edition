@@ -8,4 +8,5 @@ Steps
 2. Create a using-ts.ts file and copy contents of js-only.js to it.
     touch using-ts.ts
 3. Delete js-only.js to resolve the errors reported for ln1 - ln3 in using-ts.ts
-4. 
+4. Remove type checking code in using-ts.ts ln13 - ln23 and uncomment function, add.
+5
