@@ -9,4 +9,12 @@ Steps
     touch using-ts.ts
 3. Delete js-only.js to resolve the errors reported for ln1 - ln3 in using-ts.ts
 4. Remove type checking code in using-ts.ts ln13 - ln23 and uncomment function, add.
-5
+5. Add typecasting example
+    e.g document.getElementById("num1")! as HTMLInputElement
+6. Add argument types in function, add.
+    - When you hover over ln13 i.e function add(num1, num2)...
+    arguments, you observe the arguments are described as
+    (parameter) num1:any.
+    - This indicaates typescript is not aware of the datatype.
+    - To address this, add the dataype as shown below.
+    function add(num1: number, num2: number)...
