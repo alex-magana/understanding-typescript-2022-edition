@@ -5,4 +5,4 @@ Steps
     string: 'Hi', "Hi", `Hi`
     boolean: true or false
 2. Run tsc app.ts and oberserve the error.
-3. 
+3. In app.ts, change '5' in ln12 to 5 to rectify the error.
