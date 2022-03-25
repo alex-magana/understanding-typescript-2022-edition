@@ -1,0 +1,11 @@
+Steps
+
+1. Install typescript
+    npm install -g typescript
+    - This command install the compiler that then compiles a .ts file
+    to javascript.
+    compile hello_world.ts
+2. Create a using-ts.ts file and copy contents of js-only.js to it.
+    touch using-ts.ts
+3. Delete js-only.js to resolve the errors reported for ln1 - ln3 in using-ts.ts
+4. 
